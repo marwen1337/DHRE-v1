@@ -1,0 +1,132 @@
+
+/*
+Custom CSS
+*/
+
+html, body{
+    height: 100%;
+    background-color: #eef4f7;
+    padding-top: 35px;
+    font-size: 16.8px;
+}
+
+nav{
+    background-color: #f7da64;
+}
+
+.bg-slowloris{
+    background-color: #eef4f7;
+}
+
+.text-slowloris{
+    color: #f7da64 !important;
+}
+
+.card, .img-fluid {
+    transition: box-shadow .2s;
+    border: none;
+    border-radius: .8rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075) !important;
+}
+.card:hover, .img-fluid:hover {
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important
+}
+
+.introduce-out{
+    min-height: 10%;
+    background: linear-gradient(
+            2deg,
+            #f7da64 0%,
+            #f7da64 50%,
+            #000000 50%,
+            #000000 100%);
+
+}
+
+.blur {
+
+    /* Any browser which supports CSS3 */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+    /* Firefox version 34 and earlier */
+    filter: url("blur.svg#gaussian_blur");
+
+    /* Webkit in Chrome 52, Safari 9, Opera 39, and earlier */
+    -webkit-filter: blur(5px);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+
+.fade-scale {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fade-scale.in {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.row.vertical-divider {
+    overflow: hidden;
+}
+
+.rotating {
+    animation: spin 1.2s ease infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*
+Fontawesome
+*/
+.fa-1_5x {
+    font-size: 1.5em;
+}
+
+/*
+Gradient Backgrounds
+*/
+
+.bg-gradient-mirage{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.bg-hardgradient-primary{
+    background: linear-gradient(
+            115deg,
+            #f8f9fa 0%,
+            #f8f9fa 75%,
+            #007bff 75%,
+            #007bff 100%);
+}
